@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="./main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="text-center my-4">Form Validation</h1>
+    <div class="container card pt-4 pb-4 pr-4 pl-4">
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Name"
+          />
+        </div>
+        <p id="NameError" class="p-2 h3 text-center text-danger"></p>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+        </div>
+        <p id="emailError" class="p-2 h3 text-center text-danger"></p>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+        <p id="passwordError" class="p-2 h3 text-center text-danger"></p>
+        <div class="form-group">
+          <label for="password2">Confirm Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password2"
+            placeholder="Password"
+          />
+        </div>
+        <p id="password2Error" class="p-2 h3 text-center text-danger"></p>
+        <!-- <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label mb-3" for="exampleCheck1"
+            >Remember me</label
+          >
+        </div> -->
+        <p id="error" class="p-2 h3 text-center text-danger"></p>
+        <button onclick="formSubmit()" type="button" class="btn btn-primary">
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
